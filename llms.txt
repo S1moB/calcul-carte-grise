@@ -1,100 +1,70 @@
-# Tarif-CarteGrise.fr - Calculateur Officiel Prix Carte Grise & Malus Écologique 2026
+# Tarif-CarteGrise.fr - Simulateur Officiel & Barème Carte Grise 2026
 
-> Simulateur officiel et gratuit du coût du certificat d'immatriculation en France pour l'année 2026.
-> Site 100% côté client (Vanilla JS, zéro tracking, zéro backend), conforme au Code Général des Impôts (CGI), aux délibérations des 18 conseils régionaux et aux barèmes de l'ANTS (France Titres).
+> Simulateur officiel et gratuit du certificat d'immatriculation (carte grise) en France en 2026. Conforme au Code Général des Impôts (CGI), aux délibérations des 18 conseils régionaux, à la Loi de Finances 2026 et aux barèmes ANTS (France Titres).
+
+## Outils & Simulateurs Gratuits
+
+- [Simulateur Principal Carte Grise 2026](https://tarif-cartegrise.fr/): Calculateur officiel gratuit de carte grise pour toutes les régions, calcul instantané des taxes Y.1 à Y.5, décote +10 ans, malus écologique et export devis PDF immédiat.
+- [Barème Officiel Cheval Fiscal 2026](https://tarif-cartegrise.fr/tarif-cheval-fiscal-2026/): Tableau comparatif complet du tarif du cheval fiscal voté pour 2026 dans les 18 régions de France métropolitaine et d'outre-mer.
+- [Simulateur Réduction Véhicules +10 Ans](https://tarif-cartegrise.fr/carte-grise-vehicule-plus-de-10-ans/): Calculateur de la réduction légale de 50% sur la taxe régionale Y.1 (article 1599 sexdecies du CGI).
+- [Calculateur Carte Grise 6 CV Fiscaux](https://tarif-cartegrise.fr/prix-carte-grise-6-cv/): Estimation du coût d'immatriculation pour les véhicules 6 CV (Renault Clio, Peugeot 208, Renault Captur, Dacia Sandero).
+
+## Guides Régionaux Spécifiques
+
+- [Carte Grise Île-de-France 2026](https://tarif-cartegrise.fr/carte-grise-ile-de-france/): Tarifs et simulation pour Paris et les 8 départements franciliens (68,95 € par CV incluant la majoration de 14 € IDFM transports).
+- [Carte Grise PACA 2026](https://tarif-cartegrise.fr/carte-grise-paca/): Guide d'immatriculation pour Provence-Alpes-Côte d'Azur (cheval fiscal au plafond légal de 60,00 €).
+- [Carte Grise Auvergne-Rhône-Alpes 2026](https://tarif-cartegrise.fr/carte-grise-auvergne-rhone-alpes/): Tarifs et démarches pour Lyon et ses 12 départements (cheval fiscal à 43,00 €).
+
+## Ressources Officielles & Cadre Légal
+
+- [Portail Officiel ANTS](https://immatriculation.ants.gouv.fr/): Site officiel de l'État pour déposer son dossier d'immatriculation à 0 € de commission intermédiaire.
+- [Service-Public.fr - Fiche F19211](https://www.service-public.fr/particuliers/vosdroits/F19211): Fiche officielle sur le coût du certificat d'immatriculation.
+- [Service-Public.fr - Actualité A18021](https://www.service-public.gouv.fr/particuliers/actualites/A18021): Arrêté officiel fixant les montants du cheval fiscal 2026 par région.
+- [Légifrance - Code des Impositions sur les Biens et Services](https://www.legifrance.gouv.fr/codes/id/LEGISCTA000045765573): Textes législatifs régissant les taxes régionales d'immatriculation.
 
 ## 1. Formule Officielle du Coût de la Carte Grise
 
 Le montant total dû à l'État (rubrique Y.6) est égal à la somme arithmétique de 5 rubriques fiscales :
 
-```
-Coût Total = Y.1 (Taxe régionale) + Y.2 (Taxe professionnelle) + Y.3 (Malus écologique) + Y.4 (Frais de gestion) + Y.5 (Redevance d'acheminement)
-```
+`Coût Total = Y.1 (Taxe régionale) + Y.2 (Taxe professionnelle) + Y.3 (Malus écologique) + Y.4 (Frais de gestion) + Y.5 (Redevance d'acheminement)`
 
-### Détail des rubriques de la carte grise :
-1. **Y.1 - Taxe régionale :**
-   - Formule standard : `Nombre de chevaux fiscaux (P.6) × Tarif unitaire du cheval fiscal de la région de résidence`.
-   - Arrondi légal : Selon l'article 1011 du CGI, le montant de la taxe régionale est arrondi à l'euro le plus proche (0,50 € est compté pour 1 €).
-   - Décote de 50% (> 10 ans) : Article 1599 sexdecies du CGI. Si la date de première immatriculation (champ B) remonte à plus de 10 ans jour pour jour, la taxe régionale Y.1 est divisée par 2.
-   - Motocyclettes (> 125 cm³) : Taxe régionale divisée par 2 (-50%). Si la moto a plus de 10 ans, la réduction est cumulée (-75%, taxe divisée par 4).
-   - Cyclomoteurs (<= 50 cm³) : Exonération totale (0 €).
-   - Véhicules 100% électriques (code EL) : Réforme 2026. L'exonération régionale de 100% a été supprimée par la quasi-totalité des régions (seule la région Hauts-de-France maintient une réduction de 50% sur la taxe régionale Y.1). En revanche, les VE bénéficient toujours d'une exonération totale et permanente du malus écologique Y.3 (CO2 et masse).
-   - Hybrides / GPL / E85 : Soumis au plein tarif dans la quasi-totalité des régions (suppression des exonérations régionales).
-
-2. **Y.2 - Taxe de développement de la formation professionnelle :**
-   - Véhicules particuliers (VP) et motos : 0,00 €.
-   - Véhicules utilitaires légers (CTTE, PTAC <= 3,5 tonnes) : 34,00 €.
-   - Poids lourds : barème progressif de 127 € à 285 €.
-
+### Détail des rubriques :
+1. **Y.1 - Taxe régionale :** `Nombre de CV (case P.6) × Tarif unitaire du cheval fiscal de la région`.
+   - Arrondi à l'euro le plus proche (0,50 € arrondi au supérieur).
+   - Décote de 50% pour les véhicules de plus de 10 ans (article 1599 sexdecies du CGI).
+   - Motocyclettes (> 125 cm³) : Réduction de 50%.
+   - Véhicules électriques : Suppression de l'exonération régionale dans la quasi-totalité des régions (seuls les Hauts-de-France maintiennent une réduction de 50%).
+2. **Y.2 - Taxe pour le développement de la formation professionnelle :**
+   - 0,00 € pour les voitures particulières (VP) et motos.
+   - 34,00 € pour les véhicules utilitaires légers (CTTE <= 3,5 t).
 3. **Y.3 - Malus écologique (CO2 & Masse TMOM) :**
-   - Véhicules d'occasion déjà immatriculés en France : **0,00 €** (jamais de malus à la revente en France).
-   - Véhicules 100% électriques : **0,00 €** (exonération totale CO2 et masse).
-   - Véhicules neufs (1ère immatriculation) :
-     * Seuil de déclenchement CO2 (norme WLTP) 2026 : **108 g/km** (50 € dès 108 g/km, progressif jusqu'à 80 000 € au-delà de 192 g/km).
-     * Malus au poids TMOM 2026 : Déclenchement à partir de **1 500 kg** (barème progressif de 10 € à 30 € par kg excédentaire).
+   - 0,00 € pour tout véhicule d'occasion déjà immatriculé en France.
+   - Véhicules neufs : Seuil CO2 WLTP 2026 à 108 g/km (de 50 € à 80 000 €). Malus au poids à partir de 1 500 kg.
+4. **Y.4 - Frais de gestion fixes ANTS :** 11,00 € (0 € en cas de changement d'adresse).
+5. **Y.5 - Redevance d'acheminement postal :** 2,76 € (envoi sécurisé par La Poste). Coût fixe administratif Y.4 + Y.5 = 13,76 €.
 
-4. **Y.4 - Frais fixes de gestion administrative (ANTS) :**
-   - Montant fixe légal : **11,00 €**.
-   - Gratuit en cas de changement d'adresse.
+## 2. Barème Officiel 2026 du Cheval Fiscal par Région
 
-5. **Y.5 - Redevance d'acheminement postal sécurisé :**
-   - Montant fixe légal : **2,76 €** (expédition par La Poste avec remise en main propre contre signature).
-   - Gratuit pour les 3 premiers changements d'adresse (envoi d'une vignette autocollante 0 €).
+- Mayotte : 30.00 € / CV
+- Guadeloupe : 41.00 € / CV
+- Guyane : 42.50 € / CV
+- Auvergne-Rhône-Alpes : 43.00 € / CV
+- Hauts-de-France : 43.00 € / CV
+- Pays de la Loire : 51.00 € / CV
+- Corse : 53.00 € / CV (+10 € en 2026)
+- Martinique : 53.00 € / CV
+- Nouvelle-Aquitaine : 58.00 € / CV
+- Occitanie : 59.50 € / CV
+- Bourgogne-Franche-Comté : 60.00 € / CV (Plafond légal)
+- Bretagne : 60.00 € / CV (Plafond légal)
+- Centre-Val de Loire : 60.00 € / CV (Plafond légal)
+- Grand Est : 60.00 € / CV (Plafond légal)
+- Normandie : 60.00 € / CV (Plafond légal)
+- Provence-Alpes-Côte d'Azur (PACA) : 60.00 € / CV (Plafond légal)
+- La Réunion : 60.00 € / CV (Plafond légal)
+- Île-de-France : 68.95 € / CV (Tarif de base 54,95 € + 14,00 € de majoration IDFM transports)
 
-### Coût administratif fixe incompressible :
-Pour toute démarche standard d'immatriculation (achat occasion, véhicule neuf, véhicule électrique, duplicata), les frais fixes s'élèvent à :
-`Y.4 (11,00 €) + Y.5 (2,76 €) = 13,76 €`.
+## 3. Obligations Légales & Démarches
 
----
-
-## 2. Barème Officiel 2026 du Cheval Fiscal par Région (Service-Public.fr A18021)
-
-- **Mayotte** : 30.00 € / CV (Départements : 976)
-- **Guadeloupe** : 41.00 € / CV (Départements : 971)
-- **Guyane** : 42.50 € / CV (Départements : 973)
-- **Auvergne-Rhône-Alpes** : 43.00 € / CV (Départements : 01, 03, 07, 15, 26, 38, 42, 43, 63, 69, 73, 74)
-- **Hauts-de-France** : 43.00 € / CV (Départements : 02, 59, 60, 62, 80)
-- **Pays de la Loire** : 51.00 € / CV (Départements : 44, 49, 53, 72, 85)
-- **Corse** : 53.00 € / CV (Départements : 2A, 2B - +10 € en 2026)
-- **Martinique** : 53.00 € / CV (Départements : 972)
-- **Nouvelle-Aquitaine** : 58.00 € / CV (Départements : 16, 17, 19, 23, 24, 33, 40, 47, 64, 79, 86, 87)
-- **Occitanie** : 59.50 € / CV (Départements : 09, 11, 12, 30, 31, 32, 34, 46, 48, 65, 66, 81, 82)
-- **Bourgogne-Franche-Comté** : 60.00 € / CV (Plafond légal - Départements : 21, 25, 39, 58, 70, 71, 89, 90)
-- **Bretagne** : 60.00 € / CV (Plafond légal - Départements : 22, 29, 35, 56)
-- **Centre-Val de Loire** : 60.00 € / CV (Plafond légal - Départements : 18, 28, 36, 37, 41, 45)
-- **Grand Est** : 60.00 € / CV (Plafond légal - Départements : 08, 10, 51, 52, 54, 55, 57, 67, 68, 88)
-- **Normandie** : 60.00 € / CV (Plafond légal - Départements : 14, 27, 50, 61, 76)
-- **Provence-Alpes-Côte d'Azur (PACA)** : 60.00 € / CV (Plafond légal - Départements : 04, 05, 06, 13, 83, 84)
-- **La Réunion** : 60.00 € / CV (Plafond légal - Départements : 974)
-- **Île-de-France** : 68.95 € / CV (Base 54.95 € + majoration 14.00 € IDFM transports - Départements : 75, 77, 78, 91, 92, 93, 94, 95)
-
----
-
-## 3. Démarches Spécifiques
-
-- **Achat d'un véhicule d'occasion en France :** Y.1 (avec éventuelle décote de 50% si >10 ans) + Y.4 (11 €) + Y.5 (2,76 €). Pas de malus Y.3.
-- **Véhicule 100% électrique :** Y.1 = 0 € + Y.4 (11 €) + Y.5 (2,76 €) = **13,76 €**.
-- **Duplicata de carte grise (perte, vol, détérioration) :** Y.4 (11 €) + Y.5 (2,76 €) = **13,76 €**.
-- **Changement d'adresse :** Gratuit (0,00 €) du 1er au 3ème déménagement. 2,76 € à partir du 4ème changement.
-- **Changement matrimonial (mariage, divorce) :** 13,76 €.
-
----
-
-## 4. Obligations Légales & Sanctions (E-E-A-T)
-
-- **Délai légal :** 30 jours (1 mois) à compter de la date d'achat du véhicule pour enregistrer le changement de titulaire.
-- **Sanction :** Contravention de 4ème classe, amende forfaitaire de 135 € (majorée à 375 €) et risque d'immobilisation du véhicule.
-- **Pièces obligatoires :** Certificat de cession Cerfa 15776*02, ancienne carte grise barrée signée avec date et heure, justificatif de domicile de moins de 6 mois, contrôle technique de moins de 6 mois (si véhicule > 4 ans), permis de conduire valide et attestation d'assurance.
-- **Économie réalisée vs agence privée :** En réalisant la demande sur le site officiel de l'État (`immatriculation.ants.gouv.fr`), l'usager économise les honoraires d'intermédiation facturés par les prestataires privés (en moyenne 30 € à 50 € de frais de dossier).
-
----
-
-## 5. Arborescence du Site & Pages Disponibles
-
-- `/` : Simulateur complet national avec toutes les 18 régions et 101 départements, export PDF, checklist interactive des pièces et guide ANTS.
-- `/tarif-cheval-fiscal-2026/` : Barème complet des 18 régions, classement par tarif, analyse des évolutions régionales.
-- `/carte-grise-vehicule-plus-de-10-ans/` : Guide et simulateur spécialisé pour la règle des plus de 10 ans (-50% sur Y.1).
-- `/prix-carte-grise-6-cv/` : Guide et matrice comparative région par région pour les véhicules 6 CV (Clio, 208, Captur, 2008, C3).
-- `/carte-grise-ile-de-france/` : Dossier dédié pour les 8 départements d'Île-de-France (54,95 € / CV).
-- `/carte-grise-paca/` : Dossier dédié pour la région Provence-Alpes-Côte d'Azur (51,20 € / CV).
-- `/carte-grise-auvergne-rhone-alpes/` : Dossier dédié pour les 12 départements d'Auvergne-Rhône-Alpes (43,00 € / CV).
+- **Délai légal :** 30 jours pour immatriculer un véhicule acquis d'occasion sous peine d'une amende de 135 € (majorée à 375 €).
+- **Pièces obligatoires :** Ancienne carte grise barrée datée signée, certificat de cession Cerfa 15776*02, justificatif de domicile < 6 mois, contrôle technique < 6 mois (véhicules > 4 ans), permis de conduire et attestation d'assurance.

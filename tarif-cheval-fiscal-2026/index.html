@@ -1157,7 +1157,7 @@ a:hover {
         <h2>🏆 Classement officiel 2026 du cheval fiscal (du moins cher au plus cher)</h2>
         <p>Filtrez instantanément votre région ou votre numéro de département :</p>
         <div style="margin-bottom: 1rem;">
-            <input type="text" class="form-input" placeholder="🔍 Filtrer par région ou département (ex: 69, Gironde, PACA...)" oninput="filterTable(this)">
+            <input type="text" id="tableSearchInput" name="tableSearchInput" aria-label="Rechercher une région ou un numéro de département" class="form-input" placeholder="🔍 Rechercher une région ou un numéro de département..." oninput="filterTable(this)">
         </div>
         <div class="table-responsive">
             <table class="data-table">

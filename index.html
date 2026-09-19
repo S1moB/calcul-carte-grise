@@ -1639,47 +1639,47 @@ a:hover {
                 <span class="checklist-counter" id="chkCounter">0 / 6 prêts</span>
             </div>
             <ul class="checklist-items">
-                <li class="checklist-item" onclick="var c=this.querySelector('input'); c.checked=!c.checked; updateChecklist();">
-                    <input type="checkbox" onclick="event.stopPropagation(); updateChecklist();">
-                    <div>
-                        <div class="checklist-item-title">1. Ancienne carte grise barrée, signée et datée</div>
-                        <div class="checklist-item-desc">Comportant la mention manuscrite « Vendu le [date et heure] » ou « Cédé le », avec la signature de tous les cotitulaires. Conservez le coupon détachable.</div>
-                    </div>
+                <li class="checklist-item">
+                    <input type="checkbox" id="chkDoc1" name="chkDoc1" aria-label="1. Ancienne carte grise barrée, signée et datée" onchange="updateChecklist();">
+                    <label for="chkDoc1" style="cursor:pointer; flex:1;">
+                        <span class="checklist-item-title" style="display:block;">1. Ancienne carte grise barrée, signée et datée</span>
+                        <span class="checklist-item-desc" style="display:block;">Comportant la mention manuscrite « Vendu le [date et heure] » ou « Cédé le », avec la signature de tous les cotitulaires. Conservez le coupon détachable.</span>
+                    </label>
                 </li>
-                <li class="checklist-item" onclick="var c=this.querySelector('input'); c.checked=!c.checked; updateChecklist();">
-                    <input type="checkbox" onclick="event.stopPropagation(); updateChecklist();">
-                    <div>
-                        <div class="checklist-item-title">2. Certificat de cession officiel (Cerfa 15776*02)</div>
-                        <div class="checklist-item-desc">Rempli et cosigné par le vendeur et l'acquéreur. L'exemplaire n°1 doit être conservé par vos soins.</div>
-                    </div>
+                <li class="checklist-item">
+                    <input type="checkbox" id="chkDoc2" name="chkDoc2" aria-label="2. Certificat de cession officiel Cerfa 15776*02" onchange="updateChecklist();">
+                    <label for="chkDoc2" style="cursor:pointer; flex:1;">
+                        <span class="checklist-item-title" style="display:block;">2. Certificat de cession officiel (Cerfa 15776*02)</span>
+                        <span class="checklist-item-desc" style="display:block;">Rempli et cosigné par le vendeur et l'acquéreur. L'exemplaire n°1 doit être conservé par vos soins.</span>
+                    </label>
                 </li>
-                <li class="checklist-item" onclick="var c=this.querySelector('input'); c.checked=!c.checked; updateChecklist();">
-                    <input type="checkbox" onclick="event.stopPropagation(); updateChecklist();">
-                    <div>
-                        <div class="checklist-item-title">3. Justificatif de domicile de moins de 6 mois</div>
-                        <div class="checklist-item-desc">Facture d'électricité (EDF), gaz, eau, internet fixe, avis d'imposition récent ou quittance de loyer émise par un professionnel.</div>
-                    </div>
+                <li class="checklist-item">
+                    <input type="checkbox" id="chkDoc3" name="chkDoc3" aria-label="3. Justificatif de domicile de moins de 6 mois" onchange="updateChecklist();">
+                    <label for="chkDoc3" style="cursor:pointer; flex:1;">
+                        <span class="checklist-item-title" style="display:block;">3. Justificatif de domicile de moins de 6 mois</span>
+                        <span class="checklist-item-desc" style="display:block;">Facture d'électricité (EDF), gaz, eau, internet fixe, avis d'imposition récent ou quittance de loyer émise par un professionnel.</span>
+                    </label>
                 </li>
-                <li class="checklist-item" onclick="var c=this.querySelector('input'); c.checked=!c.checked; updateChecklist();">
-                    <input type="checkbox" onclick="event.stopPropagation(); updateChecklist();">
-                    <div>
-                        <div class="checklist-item-title">4. Procès-verbal de contrôle technique valide (moins de 6 mois)</div>
-                        <div class="checklist-item-desc">Obligatoire pour tout véhicule de plus de 4 ans. Le délai est ramené à 2 mois en cas de contre-visite prescrite.</div>
-                    </div>
+                <li class="checklist-item">
+                    <input type="checkbox" id="chkDoc4" name="chkDoc4" aria-label="4. Procès-verbal de contrôle technique valide moins de 6 mois" onchange="updateChecklist();">
+                    <label for="chkDoc4" style="cursor:pointer; flex:1;">
+                        <span class="checklist-item-title" style="display:block;">4. Procès-verbal de contrôle technique valide (moins de 6 mois)</span>
+                        <span class="checklist-item-desc" style="display:block;">Obligatoire pour tout véhicule de plus de 4 ans. Le délai est ramené à 2 mois en cas de contre-visite prescrite.</span>
+                    </label>
                 </li>
-                <li class="checklist-item" onclick="var c=this.querySelector('input'); c.checked=!c.checked; updateChecklist();">
-                    <input type="checkbox" onclick="event.stopPropagation(); updateChecklist();">
-                    <div>
-                        <div class="checklist-item-title">5. Permis de conduire en cours de validité</div>
-                        <div class="checklist-item-desc">Le titulaire de la carte grise doit obligatoirement posséder le permis correspondant à la catégorie du véhicule (B pour voiture, A/A2 pour moto).</div>
-                    </div>
+                <li class="checklist-item">
+                    <input type="checkbox" id="chkDoc5" name="chkDoc5" aria-label="5. Permis de conduire en cours de validité" onchange="updateChecklist();">
+                    <label for="chkDoc5" style="cursor:pointer; flex:1;">
+                        <span class="checklist-item-title" style="display:block;">5. Permis de conduire en cours de validité</span>
+                        <span class="checklist-item-desc" style="display:block;">Le titulaire de la carte grise doit obligatoirement posséder le permis correspondant à la catégorie du véhicule (B pour voiture, A/A2 pour moto).</span>
+                    </label>
                 </li>
-                <li class="checklist-item" onclick="var c=this.querySelector('input'); c.checked=!c.checked; updateChecklist();">
-                    <input type="checkbox" onclick="event.stopPropagation(); updateChecklist();">
-                    <div>
-                        <div class="checklist-item-title">6. Attestation d'assurance du véhicule (carte verte ou mémo)</div>
-                        <div class="checklist-item-desc">Tout véhicule immatriculé circulant en France doit être couvert au minimum par une garantie Responsabilité Civile.</div>
-                    </div>
+                <li class="checklist-item">
+                    <input type="checkbox" id="chkDoc6" name="chkDoc6" aria-label="6. Attestation d'assurance du véhicule" onchange="updateChecklist();">
+                    <label for="chkDoc6" style="cursor:pointer; flex:1;">
+                        <span class="checklist-item-title" style="display:block;">6. Attestation d'assurance du véhicule (carte verte ou mémo)</span>
+                        <span class="checklist-item-desc" style="display:block;">Tout véhicule immatriculé circulant en France doit être couvert au minimum par une garantie Responsabilité Civile.</span>
+                    </label>
                 </li>
             </ul>
         </div>
@@ -1698,7 +1698,7 @@ a:hover {
         <p>Le tarif unitaire du cheval fiscal (CV) est voté chaque année par les conseils régionaux. Retrouvez ci-dessous le classement officiel des 18 régions françaises et le coût de la carte grise pour un véhicule de 6 CV fiscaux :</p>
         
         <div style="margin: 1rem 0;">
-            <input type="text" class="form-input" placeholder="🔍 Rechercher une région ou un numéro de département..." oninput="filterTable(this)">
+            <input type="text" id="tableSearchInput" name="tableSearchInput" aria-label="Rechercher une région ou un numéro de département" class="form-input" placeholder="🔍 Rechercher une région ou un numéro de département..." oninput="filterTable(this)">
         </div>
 
         <div class="table-responsive">
