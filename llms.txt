@@ -18,8 +18,8 @@ Coût Total = Y.1 (Taxe régionale) + Y.2 (Taxe professionnelle) + Y.3 (Malus é
    - Décote de 50% (> 10 ans) : Article 1599 sexdecies du CGI. Si la date de première immatriculation (champ B) remonte à plus de 10 ans jour pour jour, la taxe régionale Y.1 est divisée par 2.
    - Motocyclettes (> 125 cm³) : Taxe régionale divisée par 2 (-50%). Si la moto a plus de 10 ans, la réduction est cumulée (-75%, taxe divisée par 4).
    - Cyclomoteurs (<= 50 cm³) : Exonération totale (0 €).
-   - Véhicules 100% électriques (code EL) : Exonération totale de 100% sur la taxe régionale Y.1 dans toutes les régions de France.
-   - Hybrides / GPL / E85 : Soumis au plein tarif dans la quasi-totalité des régions (suppression des exonérations votée par les conseils régionaux).
+   - Véhicules 100% électriques (code EL) : Réforme 2026. L'exonération régionale de 100% a été supprimée par la quasi-totalité des régions (seule la région Hauts-de-France maintient une réduction de 50% sur la taxe régionale Y.1). En revanche, les VE bénéficient toujours d'une exonération totale et permanente du malus écologique Y.3 (CO2 et masse).
+   - Hybrides / GPL / E85 : Soumis au plein tarif dans la quasi-totalité des régions (suppression des exonérations régionales).
 
 2. **Y.2 - Taxe de développement de la formation professionnelle :**
    - Véhicules particuliers (VP) et motos : 0,00 €.
@@ -47,26 +47,26 @@ Pour toute démarche standard d'immatriculation (achat occasion, véhicule neuf,
 
 ---
 
-## 2. Barème Officiel 2026 du Cheval Fiscal par Région
+## 2. Barème Officiel 2026 du Cheval Fiscal par Région (Service-Public.fr A18021)
 
-- **Corse** : 27.00 € / CV (Départements : 2A, 2B)
-- **Martinique** : 30.00 € / CV (Départements : 972)
 - **Mayotte** : 30.00 € / CV (Départements : 976)
-- **Hauts-de-France** : 36.20 € / CV (Départements : 02, 59, 60, 62, 80)
 - **Guadeloupe** : 41.00 € / CV (Départements : 971)
 - **Guyane** : 42.50 € / CV (Départements : 973)
 - **Auvergne-Rhône-Alpes** : 43.00 € / CV (Départements : 01, 03, 07, 15, 26, 38, 42, 43, 63, 69, 73, 74)
-- **Nouvelle-Aquitaine** : 45.00 € / CV (Départements : 16, 17, 19, 23, 24, 33, 40, 47, 64, 79, 86, 87)
-- **Normandie** : 46.00 € / CV (Départements : 14, 27, 50, 61, 76)
-- **Occitanie** : 47.00 € / CV (Départements : 09, 11, 12, 30, 31, 32, 34, 46, 48, 65, 66, 81, 82)
-- **Grand Est** : 48.00 € / CV (Départements : 08, 10, 51, 52, 54, 55, 57, 67, 68, 88)
+- **Hauts-de-France** : 43.00 € / CV (Départements : 02, 59, 60, 62, 80)
 - **Pays de la Loire** : 51.00 € / CV (Départements : 44, 49, 53, 72, 85)
-- **La Réunion** : 51.00 € / CV (Départements : 974)
-- **Provence-Alpes-Côte d'Azur** : 51.20 € / CV (Départements : 04, 05, 06, 13, 83, 84)
-- **Île-de-France** : 54.95 € / CV (Départements : 75, 77, 78, 91, 92, 93, 94, 95)
-- **Bourgogne-Franche-Comté** : 55.00 € / CV (Départements : 21, 25, 39, 58, 70, 71, 89, 90)
-- **Bretagne** : 55.00 € / CV (Départements : 22, 29, 35, 56)
-- **Centre-Val de Loire** : 55.00 € / CV (Départements : 18, 28, 36, 37, 41, 45)
+- **Corse** : 53.00 € / CV (Départements : 2A, 2B - +10 € en 2026)
+- **Martinique** : 53.00 € / CV (Départements : 972)
+- **Nouvelle-Aquitaine** : 58.00 € / CV (Départements : 16, 17, 19, 23, 24, 33, 40, 47, 64, 79, 86, 87)
+- **Occitanie** : 59.50 € / CV (Départements : 09, 11, 12, 30, 31, 32, 34, 46, 48, 65, 66, 81, 82)
+- **Bourgogne-Franche-Comté** : 60.00 € / CV (Plafond légal - Départements : 21, 25, 39, 58, 70, 71, 89, 90)
+- **Bretagne** : 60.00 € / CV (Plafond légal - Départements : 22, 29, 35, 56)
+- **Centre-Val de Loire** : 60.00 € / CV (Plafond légal - Départements : 18, 28, 36, 37, 41, 45)
+- **Grand Est** : 60.00 € / CV (Plafond légal - Départements : 08, 10, 51, 52, 54, 55, 57, 67, 68, 88)
+- **Normandie** : 60.00 € / CV (Plafond légal - Départements : 14, 27, 50, 61, 76)
+- **Provence-Alpes-Côte d'Azur (PACA)** : 60.00 € / CV (Plafond légal - Départements : 04, 05, 06, 13, 83, 84)
+- **La Réunion** : 60.00 € / CV (Plafond légal - Départements : 974)
+- **Île-de-France** : 68.95 € / CV (Base 54.95 € + majoration 14.00 € IDFM transports - Départements : 75, 77, 78, 91, 92, 93, 94, 95)
 
 ---
 
