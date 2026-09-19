@@ -1,4 +1,4 @@
-# CarteGrise2026.fr - Calculateur Officiel Prix Carte Grise & Malus Écologique 2026
+# Tarif-CarteGrise.fr - Calculateur Officiel Prix Carte Grise & Malus Écologique 2026
 
 > Simulateur officiel et gratuit du coût du certificat d'immatriculation en France pour l'année 2026.
 > Site 100% côté client (Vanilla JS, zéro tracking, zéro backend), conforme au Code Général des Impôts (CGI), aux délibérations des 18 conseils régionaux et aux barèmes de l'ANTS (France Titres).
